@@ -32,6 +32,7 @@ class Game
   def menu
     puts ""
     puts "What's your question?:".red
+    puts "-----------------------------".red
     puts "Q to quit".white
     puts "L for list of answers".cyan
     puts "C for clear".yellow
@@ -44,8 +45,8 @@ class Game
     when "q"
       exit
       when "l"
-       # binding.pry
-       @answers
+       puts @new_answers
+       menu
       when "c"
         clear
       when "a"
